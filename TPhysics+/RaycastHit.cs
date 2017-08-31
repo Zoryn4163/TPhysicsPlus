@@ -17,5 +17,16 @@ namespace TPhysicsPlus
             Tile = null;
             Player = null;
         }
+
+        public override string ToString()
+        {
+            if (Npc != null)
+                return Npc.FullName;
+
+            if (Tile != null)
+                return Tile.blockType().ToString();
+
+            return "null";
+        }
     }
 }
