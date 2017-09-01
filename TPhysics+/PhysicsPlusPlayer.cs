@@ -34,8 +34,10 @@ namespace TPhysicsPlus
             DebugDraws = new List<Rectangle>();
             StompedNpcs = new List<Stomped>();
 
+            /*
             if (!Main.dedServ)
                 Main.OnPostDraw += Main_OnPostDraw;
+            */
 
             base.Initialize();
         }
